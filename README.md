@@ -33,3 +33,9 @@ Candela Outcomes adds an Outcomes meta field for coursework.
 
 1.  Download or clone Candela Outcomes into your wordpress multisite plugins directory: `/path/to/wordpress/wp-content/plugins`
 1.  Log in to your Wordpress multisite instance and navigate to `Network Admin > Plugins` and activate the Candela Outcomes plugin
+
+## Unit Testing and Code Standards
+
+Unit tests and code standards are run by simply running `composer test`.
+If you would just like to check code standards,
+you can run `composer standards`.
