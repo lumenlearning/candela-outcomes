@@ -1,0 +1,35 @@
+{
+  "name": "lumenlearning/candela-outcomes",
+  "description": "Extends creative commons attribution functionality",
+  "type": "wordpress-plugin",
+  "version": "1.0.0",
+  "homepage": "https://github.com/lumenlearning/candela-outcomes",
+  "authors": [
+    {
+      "name": "Lumen Learning",
+      "email": "dev@lumenlearning.com",
+      "homepage": "https://lumenlearning.com"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/lumenlearning/candela-outcomes/issues/",
+    "source": "https://github.com/lumenlearning/candela-outcomes/"
+  },
+  "require-dev": {
+    "humanmade/coding-standards": "^0.3",
+    "phpunit/phpunit": "^7.5"
+  },
+  "require": {
+    "php": ">=5.6.0",
+    "composer/installers": "~1.0"
+  },
+  "scripts": {
+    "test": [
+      "vendor/bin/phpunit --configuration phpunit.xml",
+      "@standards"
+    ],
+    "standards": [
+      "vendor/bin/phpcs --standard=phpcs.ruleset.xml *.php ."
+    ]
+  }
+}
