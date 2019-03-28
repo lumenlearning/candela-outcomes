@@ -53,7 +53,7 @@ class Outcomes {
 	/**
 	 * Render outcome guid fields.
 	 *
-	 * @param $post_id
+	 * @param $post
 	 */
 	public static function render_outcomes( $post ) {
 		$meta = self::get_outcome_guids( $post->ID );
