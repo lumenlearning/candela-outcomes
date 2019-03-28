@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<ruleset>
+    <!-- Scan only PHP files -->
+    <arg name="extensions" value="php"/>
+
+    <!-- Show colors in console -->
+    <arg value="-colors"/>
+
+    <!-- Show progress -->
+    <arg value="p"/>
+
+    <!-- Use HM Coding Standards -->
+    <rule ref="vendor/humanmade/coding-standards">
+        <!-- Disable all ESLint checks -->
+        <exclude name="HM.Debug.ESLint"/>
+        <!-- Disable rules we disagree with -->
+        <exclude name="WordPress.VIP.SessionVariableUsage"/>
+        <exclude name="WordPress.VIP.SessionFunctionsUsage"/>
+    </rule>
+
+    <!-- Re-enable rules we agree with -->
+    <rule ref="Generic.NamingConventions.UpperCaseConstantName"/>
+
+    <exclude-pattern>/tests/bootstrap.php</exclude-pattern>
+    <exclude-pattern>/vendor/*</exclude-pattern>
+
+</ruleset>
